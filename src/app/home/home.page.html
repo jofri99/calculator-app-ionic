@@ -7,14 +7,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      Applications
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-button href="/calculator">
+      calculator
+    </ion-button>
+    <ion-button href="/currency-converter">
+      currency-converter
+    </ion-button>
+  </ion-card>
 </ion-content>

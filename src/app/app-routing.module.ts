@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'calculator',
+    loadChildren: () => import('./calculator/calculator.module').then( m => m.CalculatorPageModule)
+  },
+  {
+    path: 'currency-converter',
+    loadChildren: () => import('./currency-converter/currency-converter.module').then( m => m.CurrencyConverterPageModule)
+  },
 ];
 
 @NgModule({

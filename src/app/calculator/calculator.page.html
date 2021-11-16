@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title>
+        Calculator
+      </ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+
+      <ion-item text-end>
+        <ion-label position="floating">Floating Label</ion-label>
+        <ion-input [(ngModel)]="value"></ion-input>
+      </ion-item>
+
+      <div *ngFor="let symbolArrs of symbols">
+        <ion-button *ngFor="let symbol of symbolArrs" class="symbolButton" (click)="onNumButtonClicked(symbol)">{{symbol}}</ion-button>
+      </div>
+      
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button href="/home">Home</ion-button>
+</ion-content>
