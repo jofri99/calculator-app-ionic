@@ -14,10 +14,12 @@
     </ion-card-header>
     
     <ion-card-content>
-
+      
       <ion-item text-end>
-        <ion-label position="floating">Floating Label</ion-label>
-        <ion-input [(ngModel)]="value"></ion-input>
+        <ion-label position="floating">Calculation</ion-label>
+        <form (submit)="updateResult()">
+          <ion-input name="inputCalc" [(ngModel)]="value" (ionChange)="characterValidation($event)" class="textInput"></ion-input>
+        </form>
       </ion-item>
 
       <div *ngFor="let symbolArrs of symbols">
@@ -27,6 +29,4 @@
       
     </ion-card-content>
   </ion-card>
-
-  <ion-button href="/home">Home</ion-button>
 </ion-content>
