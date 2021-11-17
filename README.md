@@ -5,6 +5,7 @@ A simple ionic calculator app with mouse and keyboard input
 Simply run the following command inside the root of this project. This downloads all dependencies into the `node_modules` folder.
 
 - install node with `npm`
+- install ionic globally with `npm install -g @ionic/cli`
 - `npm install`
 
 ## Execution
