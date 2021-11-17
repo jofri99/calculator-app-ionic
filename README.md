@@ -1,4 +1,4 @@
-# onexip-ionic-app
+# calculator-app-ionic
 A simple ionic calculator app with mouse and keyboard input
 
 ## Building
