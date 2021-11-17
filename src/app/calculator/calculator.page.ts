@@ -26,7 +26,7 @@ export class CalculatorPage implements OnInit {
     if(res !== Infinity) {
       this.value = res.toString();
     } else {
-      this.ionicToastService.showToast()
+      this.ionicToastService.showToast('No valid calculation!')
     }
   }
 

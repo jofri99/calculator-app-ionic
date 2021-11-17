@@ -10,9 +10,9 @@ export class IonicToastService {
     public toast: ToastController
   ) { }
 
-  showToast() {
+  showToast(msg) {
     this.myToast = this.toast.create({
-      message: 'No valid calculation!',
+      message: msg,
       duration: 2000
     }).then((toastData) => {
       console.log(toastData);
